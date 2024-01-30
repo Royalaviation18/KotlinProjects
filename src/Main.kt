@@ -178,6 +178,25 @@ fun main() {
     //named argument, arguments can be used in any order if using named argument
     searchFor(search = "How to become best version of yourself", searchEngine = "Yahoo")
 
+    //extension function
+    println("Please enter a number")
+    val input = readLine()?.toInt()
+
+    if(input != null){
+        //using extended function
+        input.isPrime()
+    }
+
+}
+
+//extension function
+//type to be extended.function name
+//Int (type).isPrime(function name)
+fun Int.isPrime(): Boolean{
+    //this here is the input (line 187)
+    for(i in 2 until this - 1){
+
+    }
 }
 
 //default arguments
