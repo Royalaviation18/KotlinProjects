@@ -236,7 +236,7 @@ fun printPow(base: Int, exponent: Int) : Int {
     var result = 1
     for(i in 1..exponent){
         result  *= base
-    }x
+    }
     return result
 }
 
