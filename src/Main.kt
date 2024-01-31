@@ -184,9 +184,11 @@ fun main() {
 
     if(input != null){
         //using extended function
-        input.isPrime()
+        if(input.isPrime())
+            println("$input is prime")
+        else
+            println("$input is not a prime number")
     }
-
 }
 
 //extension function
@@ -195,8 +197,11 @@ fun main() {
 fun Int.isPrime(): Boolean{
     //this here is the input (line 187)
     for(i in 2 until this - 1){
-
+        if(this % i == 0){
+            return false
+        }
     }
+    return true
 }
 
 //default arguments
@@ -231,7 +236,7 @@ fun printPow(base: Int, exponent: Int) : Int {
     var result = 1
     for(i in 1..exponent){
         result  *= base
-    }
+    }x
     return result
 }
 
