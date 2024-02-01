@@ -6,6 +6,7 @@ class Circle(
 ) : Shape("Circle") {
     //only visible (usable) in Circle class
     private val pi = 3.14
+
     init {
         println("$name is created with radius = $radius")
         println("$name area is ${area()}")
